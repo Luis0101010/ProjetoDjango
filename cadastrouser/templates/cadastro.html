@@ -1,0 +1,19 @@
+<h2>Cadastro de Usuário</h2>
+{% if erro %}
+<p style="color:red;">{{ erro }}</p>
+{% endif %}
+<form method="post">
+    {% csrf_token %}
+    <label>Usuário:</label><input type="text" name="username" required><br>
+    <label>Email:</label><input type="email" name="email"><br>
+    <label>Senha:</label><input type="password" name="password" required><br>
+    <button type="submit">Cadastrar</button>
+</form><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
+<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
+<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
